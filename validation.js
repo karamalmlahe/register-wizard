@@ -1,7 +1,6 @@
 const required = (value) => {
   return value != null && value.length > 0;
 };
-fun
 const minLength = (value, minLength) => {
   return value.length >= minLength;
 };
@@ -19,7 +18,6 @@ const validNumber = (value) => {
 const validUrlPhoto = (url) => {
   return /\.(jpg|jpeg|png|webp|avif|gif|svg)$/.test(url);
 };
-
 const validFullName = (value) => {
   const fullName = value.split(" ");
   if (fullName.length < 2) {
