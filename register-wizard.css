@@ -1,11 +1,45 @@
-.container{}
+.container {
+    padding: 30px;
+    background-color: gray;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 40%;
+    max-width:500px;
+
+}
+body{
+    margin-top:100px;
+}
+.required{
+    margin-left:100% !important;
+}
 #button-next {
+    background-color : rgb(187, 187, 187);
 }
 #button-back {
+    background-color : rgba(94, 205, 249, 0.742);
 }
 .input {
+    width: 100%;
+    font-size:14px;
+    padding:5px;
 }
-.btn{}
-.errorComponent{}
-.errorText {}
-.title{}
+.button {
+    border-radius: 10px;
+    width:100px;
+    padding: 5px 0px;
+    color: black;
+}
+.errorComponent {
+}
+.errorText {
+    color:rgb(240, 0, 0);
+    font-size:13px;
+    text-align:left;
+    margin:0px !important;
+}
+.title {
+  font-size:25px;
+  text-align: center;
+}
