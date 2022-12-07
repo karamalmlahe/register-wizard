@@ -8,5 +8,5 @@ const addItem = (key, value) => {
   localStorage.setItem(key, value);
 };
 const isExist = (key) => {
- return key in localStorage;
+  return key in localStorage;
 };

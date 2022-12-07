@@ -1,3 +1,5 @@
 const getNextPage = () => {};
 const getCurrentPage = () => {};
-const getPreviousPage = () => {};
+const getPreviousPage = () => {
+    history.back();
+};
