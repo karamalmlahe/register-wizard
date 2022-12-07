@@ -1,7 +1,7 @@
 const required = (value) => {
   return value != null && value.length > 0;
 };
-
+fun
 const minLength = (value, minLength) => {
   return value.length >= minLength;
 };
