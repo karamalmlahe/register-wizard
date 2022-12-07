@@ -8,17 +8,25 @@ const nextPage = () => {
   }
 };
 const validFeilds = (cityName, streetName) => {
-  const MAXLENGTH = 20;
-  if (!required(cityName) || !maxLength(cityName, MAXLENGTH)) {
-    document.getElementById("city-error").innerText = "error";
-    return false;
-  }
-  if (!required(streetName) || !maxLength(streetName, MAXLENGTH)) {
-    document.getElementById("street-error").innerText = "error";
-    return false;
-  }
-  return true;
-};
+    const MAXLENGTH = 20;
+    if (!required(cityName)) {
+        document.getElementById("city-error").innerText = 'error, city name is required'
+        return false;
+    } else if(!maxLength(cityName, MAXLENGTH)){
+        document.getElementById("city-error").innerText = `error, max length is ${MAXLENGTH}`
+        return false;
+    }
+    if (!required(streetName)) {
+        document.getElementById("city-error").innerText =''
+        document.getElementById("street-error").innerText = 'error, street name is required'
+        return false;
+    } else if(!maxLength(streetName, MAXLENGTH)) {
+        document.getElementById("city-error").innerText =''
+        document.getElementById("street-error").innerText = `error, max length is ${MAXLENGTH}`
+        return false;
+    }
+    return true
+}
 const addToLocalStorege = (cityName, streetName, homeNumber) => {
   addItem("city", cityName);
   addItem("street", streetName);
