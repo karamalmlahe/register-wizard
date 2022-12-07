@@ -1,5 +1,5 @@
 const required = (value) => {
-  return value == null || value.length == 0;
+  return value != null && value.length > 0;
 };
 
 const minLength = (value, minLength) => {
