@@ -15,15 +15,15 @@
     <h2 class="title">Address</h2>
     <form class="container">
         <label for="requerd">*</label><br>
-        <input type="text" class="input" placeholder="city name"><br>
+        <input type="text" id="city" class="input" placeholder="city name"><br>
         <label for="requerd">*</label><br>
-        <input type="text" class="input" placeholder="street name"><br>
+        <input type="text" id="street" class="input" placeholder="street name"><br>
         <label for="requerd">*</label><br>
-        <input type="text" class="input" placeholder="home number"><br>
+        <input type="text" id="home-number" class="input" placeholder="home number"><br>
         <br>
     </form>
-    <button id="button-back">Back</button>
-    <button id="button-next">Next</button>
+    <button id="button-back" onclick="getPreviousPage()">Back</button>
+    <button id="button-next" onclick="nextPage()">Next</button>
 
 </body>
 
