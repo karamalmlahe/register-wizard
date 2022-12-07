@@ -8,6 +8,7 @@
     <title>Address</title>
     <script src="../validation.js"></script>
     <script src="../navigation.js"></script>
+    <script src="../storege.js"></script>
     <script src="./address.js"></script>
     <link rel="stylesheet" href="../register-wizard.css">
 </head>
@@ -16,9 +17,11 @@
     <h2 class="title">Address</h2>
     <form class="container">
         <label for="requerd">*</label><br>
-        <input type="text" id="city" class="input" placeholder="city name"><br>
+        <input type="text" id="city" class="input" placeholder="city name">
+        <p id="city-error" class="errorText"></p>
         <label for="requerd">*</label><br>
         <input type="text" id="street" class="input" placeholder="street name"><br>
+        <p id="street-error" class="errorText"></p>
         <label for="requerd">*</label><br>
         <input type="text" id="home-number" class="input" placeholder="home number"><br>
         <br>
