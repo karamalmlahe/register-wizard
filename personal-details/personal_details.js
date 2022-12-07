@@ -6,6 +6,8 @@ const next = () => {
     validEmail(email);
     validBirthDate(birthDate);
 
+
+    
 }
 
 
