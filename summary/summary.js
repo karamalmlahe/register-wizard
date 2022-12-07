@@ -16,4 +16,5 @@ function display() {
   document.getElementById("email").innerHTML = email;
   document.getElementById("birthDate").innerHTML = birthDate;
   document.getElementById("hobbies").innerHTML = hobbies;
+  document.getElementById("img").src = img;
 }
