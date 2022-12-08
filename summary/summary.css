@@ -1,5 +1,6 @@
 .container {
   display: flex;
+  border-radius: 20px;
 }
 .item {
   background: #ebc8c8;

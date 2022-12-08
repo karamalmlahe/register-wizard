@@ -4,7 +4,7 @@ const nextPage = () => {
   const homeNumber = document.getElementById("home-number").value;
   if (validFeilds(cityName, streetName)) {
     addToLocalStorege(cityName, streetName, homeNumber);
-    getNextPage();
+    getNextPage('address')
   }
 };
 const validFeilds = (cityName, streetName) => {
