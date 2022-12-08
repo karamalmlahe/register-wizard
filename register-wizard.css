@@ -31,8 +31,6 @@ body{
     padding: 5px 0px;
     color: black;
 }
-.errorComponent {
-}
 .errorText {
     color:rgb(240, 0, 0);
     font-size:13px;
