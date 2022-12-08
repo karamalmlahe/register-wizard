@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+}
+.item {
+  background: #ebc8c8;
+  flex-basis: 100px;
+  height: 100px;
+  margin: 5px;
+}

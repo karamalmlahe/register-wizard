@@ -18,31 +18,29 @@
 <body>
     <div class="container">
         <h2 class="title">miscellaneous</h2>
-        <form action="" class="">
-            <label for="imageUrl">enter photo url : </label><br>
+        <div  class="container">
+            <label class="required" for="imageUrl">Enter photo url : </label><br>
             <input type="text" id="imageUrl" name="imageUrl" placeholder="imageUrl"><br>
             <br><br>
-            <label for="hobbie lable">What is your hobbies ? </label><br>
+            <label class="required" for="hobbie lable">What is your hobbies ? </label><br>
 
-            <form action="/action_page.php" method="get">
               <input type="checkbox" name="hobbie1" value="Chess">
-              <label for="hobbie1"> Chess</label><br>
+              <label class="required" for="hobbie1"> Chess</label><br>
               <input type="checkbox" name="hobbie2" value="Movies">
-              <label for="hobbie2"> Movies</label><br>
+              <label class="required" for="hobbie2"> Movies</label><br>
               <input type="checkbox" name="hobbie3" value="Sport" checked>
-              <label for="hobbie3"> Sport</label><br>
+              <label class="required" for="hobbie3"> Sport</label><br>
               <input type="checkbox" name="hobbie4" value="Cars" checked>
-              <label for="hobbie4"> Cars</label><br>
+              <label class="required" for="hobbie4"> Cars</label><br>
               <input type="checkbox" name="hobbie5" value="Dolls" checked>
               <label for="hobbie5"> Dolls</label><br><br>
-              <input type="submit" value="Submit">
-            </form>
             <br><br>
-        </form>
-        <button onclick=""> Next </button>
-        <button onclick=""> Back </button>
+        </div>
+        <div class="btn-container">
+        <button id="button-back" class="button" onclick="getPreviousPage()">Back</button>
+        <button id="button-next"  class="button" onclick="nextPage()">Next</button>
     </div>
-
+</div>
 </body>
 
 </html>
