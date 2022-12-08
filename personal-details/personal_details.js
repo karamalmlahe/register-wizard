@@ -4,7 +4,7 @@ const next = () => {
     const birthDate = document.getElementById("birthDate").value
     if (validPersonalDetails(fullName, email, birthDate)) {
         addToLocalStorege(fullName, email, birthDate)
-        getNextPage();
+        getNextPage('personal_details');
     }
 
 
