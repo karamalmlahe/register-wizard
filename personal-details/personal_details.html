@@ -17,16 +17,19 @@
 
 <body>
     <h2 class="title">Personal Details</h2>
-    <form action="" class="container">
+    <div action="" class="container">
         <label class="required">*</label><br>
-        <input class="input" type="text" id="full_name" name="full_name" placeholder="Full Name"><br>
+        <input class="input" type="text" id="fullName" name="full Name" placeholder="Full Name"><br>
+        <p class="errorText" id="fullName-error"></p>
         <label class="required">*</label><br>
         <input class="input" type="text" id="email" name="Email" placeholder="Email"><br>
+        <p class="errorText" id="email-error"></p>
         <label class="required">*</label><br>
-        <input class="input" type="date" id="birth_date" name="Birth Date" placeholder="Birth Date"> <br>
+        <input class="input" type="date" id="birthDate" name="Birth Date" placeholder="Birth Date"> <br>
+        <p class="errorText" id="birthDate-error"></p>
+        <button id="button-next" class="button" onclick="next()">Next</button>
+    </div>
 
-    </form>
-    <button id="button-next" class="button"> Next </button>
     </div>
 
 </body>
