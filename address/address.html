@@ -15,7 +15,7 @@
 
 <body>
     <h2 class="title">Address</h2>
-    <form class="container">
+    <div class="container">
         <label class="required">*</label><br>
         <input type="text" id="city" class="input" placeholder="city name">
         <p id="city-error" class="errorText"></p>
@@ -25,9 +25,12 @@
         <label class="required">*</label><br>
         <input type="text" id="home-number" class="input" placeholder="home number"><br>
         <br>
-    </form>
-    <button id="button-back" class="button" onclick="getPreviousPage()">Back</button>
-    <button id="button-next"  class="button" onclick="nextPage()">Next</button>
+        <div class="btn-container">
+            <button id="button-back" class="button" onclick="getPreviousPage()">Back</button>
+            <button id="button-next" class="button" onclick="nextPage()">Next</button>
+        </div>
+    </div>
+
 
 </body>
 
