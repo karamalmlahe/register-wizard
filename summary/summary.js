@@ -18,3 +18,5 @@ function display() {
   document.getElementById("hobbies").innerHTML = hobbies;
   document.getElementById("img").src = img;
 }
+
+display();
