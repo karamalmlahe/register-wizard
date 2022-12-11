@@ -18,29 +18,31 @@
 <body>
     <div class="container">
         <h2 class="title">miscellaneous</h2>
-        <div  class="container">
+        <div class="container">
             <label class="required" for="imageUrl">Enter photo url : </label><br>
-            <input type="text" id="imageUrl" name="imageUrl" placeholder="imageUrl"><br>
+            <input type="text" id="img" name="imageUrl" placeholder="imageUrl"><br>
+            <p id="photo-error" class="errorText"></p>
             <br><br>
             <label class="required" for="hobbie lable">What is your hobbies ? </label><br>
-
-              <input type="checkbox" name="hobbie1" value="Chess">
-              <label class="required" for="hobbie1"> Chess</label><br>
-              <input type="checkbox" name="hobbie2" value="Movies">
-              <label class="required" for="hobbie2"> Movies</label><br>
-              <input type="checkbox" name="hobbie3" value="Sport" checked>
-              <label class="required" for="hobbie3"> Sport</label><br>
-              <input type="checkbox" name="hobbie4" value="Cars" checked>
-              <label class="required" for="hobbie4"> Cars</label><br>
-              <input type="checkbox" name="hobbie5" value="Dolls" checked>
-              <label for="hobbie5"> Dolls</label><br><br>
+            <div class="checkbox_hobbies">
+                <input type="checkbox" id="hobbie_Chess" name="hobbie1" value="Chess">
+                <label class="required" for="hobbie1"> Chess</label><br>
+                <input type="checkbox" id="hobbie_Movies" name="hobbie2" value="Movies">
+                <label class="required" for="hobbie2"> Movies</label><br>
+                <input type="checkbox" id="hobbie_Sport" name="hobbie3" value="Sport" checked>
+                <label class="required" for="hobbie3"> Sport</label><br>
+                <input type="checkbox" id = "hobbie_cars" name="hobbie4" value="Cars" checked>
+                <label class="required" for="hobbie4"> Cars</label><br>
+                <input type="checkbox" id = "hobbie_dolls" name="hobbie5" value="Dolls" checked>
+                <label for="hobbie5"> Dolls</label><br><br>
+            </div>
             <br><br>
         </div>
         <div class="btn-container">
-        <button id="button-back" class="button" onclick="getPreviousPage()">Back</button>
-        <button id="button-next"  class="button" onclick="nextPage()">Next</button>
+            <button id="button-back" class="button" onclick="getPreviousPage()">Back</button>
+            <button id="button-next" class="button" onclick="nextPage()">Next</button>
+        </div>
     </div>
-</div>
 </body>
 
 </html>
